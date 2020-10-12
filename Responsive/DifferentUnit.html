@@ -1,0 +1,140 @@
+<!-- em,rem,%,vw,vh  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diifferent unit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.emUnit{
+            font-size: 1.5em;
+            
+        }
+        p{
+            font-size: 1.5em;
+        }
+
+        div.remUnit{
+            font-size: 1.5em;
+        }
+        p.remUnit{
+            font-size: 1.5rem;
+        }
+
+        div.vwUnit{
+            width: 40vw;
+            height: 10vh;
+            background: seagreen;
+        }
+        p.vwUnit{
+            font-size: 1.5rem;
+            
+        }
+
+        div.background{
+            margin:5em;
+            background: url("../images/fenerbahce.jpg") center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color:darkred;
+            align-items: center;
+            padding: 3rem;
+        }
+        @media(max-width: 800px)
+        {
+            
+            div.emUnit
+            {
+                font-size: 1.5em;
+
+                display: none;
+                
+            }
+            p
+            {
+                font-size: 1.5em;
+
+                display: none;
+            }
+
+            div.remUnit
+            {
+                font-size: 1.5em;
+
+                display: none;
+            }
+            p.remUnit
+            {
+                font-size: 1.5rem;
+
+                display: none;
+            }
+
+            div.vwUnit{
+                width: 40vw;
+                height: 10vh;
+                background: seagreen;
+
+                display: none;
+            }
+            p.vwUnit{
+                font-size: 1.5rem;
+
+                display: none;
+                
+            }
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+ 
+        @media(max-width: 500px){
+            h1{
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+                
+            }
+            p{
+                font-size: 1rem;
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="emUnit">
+        <p class="emUnit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis unde distinctio minima adipisci enim natus? Perferendis animi sapiente porro placeat similique numquam consectetur ab doloremque. Impedit natus cumque tenetur?</p>
+    </div>
+
+    <div class="remUnit">
+        <p class="remUnit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis unde distinctio minima adipisci enim natus? Perferendis animi sapiente porro placeat similique numquam consectetur ab doloremque. Impedit natus cumque tenetur?</p>
+    </div>
+
+    <div class="vwUnit">
+        <p class="vwUnit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis unde distinctio minima adipisci enim natus? Perferendis animi sapiente porro placeat similique numquam consectetur ab doloremque. Impedit natus cumque tenetur?</p>
+    </div>
+<br>
+    <div class="background">
+       <h1>Welcomee!</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, illum!</p>
+    </div>
+</body>
+</html>
+<!-- rem HTML elementine göre. 
+vw->yatayda
+vh->dikeyde
+-->
